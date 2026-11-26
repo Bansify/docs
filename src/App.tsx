@@ -74,7 +74,7 @@ const contentComponents = Object.fromEntries(
     lazy(load),
   ]),
 );
-const github = 'https://github.com/GothwadTech';
+const github = 'https://github.com/BansifyTech';
 function readPreference(key: string) {
   try {
     return localStorage.getItem(key);
@@ -156,11 +156,11 @@ function Header({
         <Link
           to="/"
           className="brand"
-          aria-label="Gothwad Tech documentation home"
+          aria-label="Bansify documentation home"
         >
           <BrandMark />
           <span>
-            Gothwad<span className="brand-tech"> Tech</span>
+            Bansify<span className="brand-tech"> Tech</span>
           </span>
         </Link>
         <span className="brand-divider" />
@@ -175,7 +175,7 @@ function Header({
         <Outside
           href={github}
           className="icon-button github-button"
-          aria-label="GothwadTech on GitHub"
+          aria-label="BansifyTech on GitHub"
         >
           <Github size={19} />
         </Outside>
@@ -187,8 +187,8 @@ function Header({
         >
           {theme === 'light' ? <Sun size={20} /> : <Moon size={19} />}
         </button>
-        <Outside href="https://www.gothwadtech.com" className="website-link">
-          Go to Gothwad <ArrowUpRight size={15} />
+        <Outside href="https://www.bansify.com" className="website-link">
+          Go to Bansify <ArrowUpRight size={15} />
         </Outside>
       </nav>
     </header>
@@ -347,7 +347,7 @@ function EcosystemArt() {
   return (
     <div
       className="ecosystem-art"
-      aria-label="Gothwad connects identity, email, video, browsing, messaging, and meetings"
+      aria-label="Bansify connects identity, email, video, browsing, messaging, and meetings"
       role="img"
     >
       <div className="art-glow" />
@@ -470,7 +470,7 @@ function ProductExplorer({ full = false }: { full?: boolean }) {
             {full ? 'Find your next building block.' : 'Explore our products'}
             {!full && <span className="number-pill">{products.length}</span>}
           </h2>
-          <p>Everything you need to build with the Gothwad ecosystem.</p>
+          <p>Everything you need to build with the Bansify ecosystem.</p>
         </div>
         {!full && (
           <Link className="text-link" to="/products">
@@ -583,7 +583,7 @@ function HomePage() {
             Build them <span>here.</span>
           </h1>
           <p>
-            Your starting point for everything Gothwad Tech.
+            Your starting point for everything Bansify.
             <br className="desktop-br" /> Explore the docs, connect our
             products, and bring
             <br className="desktop-br" /> your next idea to life.
@@ -608,7 +608,7 @@ function HomePage() {
           <Rocket size={22} strokeWidth={1.7} />
         </span>
         <span className="welcome-text">
-          <strong>New to Gothwad Tech?</strong>
+          <strong>New to Bansify?</strong>
           <span>
             Get to know the ecosystem and find the right tools for your project.
           </span>
@@ -655,7 +655,7 @@ function HomePage() {
 function Footer() {
   return (
     <footer className="footer">
-      <span>© {new Date().getFullYear()} Gothwad Tech</span>
+      <span>© {new Date().getFullYear()} Bansify</span>
       <div>
         <Link to="/docs/contributing">Contribute</Link>
         <Outside href={`${github}/docs/issues`}>
@@ -702,7 +702,7 @@ function GuidesPage() {
         <p>
           Source-based walkthroughs for integrating, configuring,
           <br />
-          and deploying the Gothwad ecosystem.
+          and deploying the Bansify ecosystem.
         </p>
       </div>
       <div className="guide-grid guide-index">
@@ -742,7 +742,7 @@ function RepositoriesPage() {
         <div className="eyebrow">BUILT IN THE OPEN</div>
         <h1>Explore the source.</h1>
         <p>
-          A snapshot of GothwadTech's public repositories.
+          A snapshot of BansifyTech's public repositories.
           <br />
           Reviewed October 14, 2026. Repository descriptions come from GitHub.
         </p>
@@ -1091,7 +1091,7 @@ function DocPage({ doc }: { doc: Doc }) {
             <div className="outline-tip">
               <Sparkles size={19} />
               <strong>Keep exploring.</strong>
-              <p>Find your next building block in the Gothwad ecosystem.</p>
+              <p>Find your next building block in the Bansify ecosystem.</p>
               <Link to="/products">
                 Explore products <ArrowRight size={13} />
               </Link>
@@ -1273,7 +1273,7 @@ function SearchDialog({ close }: { close: () => void }) {
             <kbd>↓</kbd> to navigate <kbd>↵</kbd> to open
           </span>
           <span>
-            <BrandMark small /> Gothwad Docs
+            <BrandMark small /> Bansify Docs
           </span>
         </div>
       </div>
@@ -1301,7 +1301,7 @@ export default function App() {
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     try {
-      localStorage.setItem('gothwad-theme', theme);
+      localStorage.setItem('bansify-theme', theme);
     } catch {}
   }, [theme]);
   useEffect(() => {
@@ -1322,13 +1322,13 @@ export default function App() {
         '/repositories': 'Repository directory',
       }[location.pathname] ||
       'Page not found';
-    document.title = `${label} · Gothwad Tech Developers`;
+    document.title = `${label} · Bansify Developers`;
     document
       .querySelector('meta[name="description"]')
       ?.setAttribute(
         'content',
         doc?.description ||
-          'Documentation, integration guides, and developer resources for the Gothwad Tech ecosystem.',
+          'Documentation, integration guides, and developer resources for the Bansify ecosystem.',
       );
   }, [location.pathname, location.hash]);
   return (

@@ -35,7 +35,7 @@ test('full-text search, keyboard selection, empty state and dismissal', async ({
   const input = page.getByRole('combobox');
   await input.fill('PKCE');
   await expect(page.getByRole('option').first()).toContainText(
-    'Integrate Sign in with Gothwad',
+    'Integrate Sign in with Bansify',
   );
   await input.press('Enter');
   await expect(page).toHaveURL(/\/docs\/oauth$/);

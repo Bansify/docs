@@ -46,7 +46,7 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 'accounts',
-    name: 'Gothwad Accounts',
+    name: 'Bansify Accounts',
     description:
       'One identity for your ecosystem. Authentication, sessions, and OAuth 2.0.',
     icon: Fingerprint,
@@ -57,7 +57,7 @@ export const products: Product[] = [
   },
   {
     id: 'mail',
-    name: 'Gothwad Mail',
+    name: 'Bansify Mail',
     description:
       'Your inbox, connected. Send, receive, and manage email on the edge.',
     icon: Mail,
@@ -68,7 +68,7 @@ export const products: Product[] = [
   },
   {
     id: 'tube',
-    name: 'Gothwad Tube',
+    name: 'Bansify Tube',
     description:
       'A better way to watch. Explore the PlusTube app and its web platform.',
     icon: Play,
@@ -79,7 +79,7 @@ export const products: Product[] = [
   },
   {
     id: 'browser',
-    name: 'Gothwad Browser',
+    name: 'Bansify Browser',
     description:
       'Built for the bigger screen. Browsing for Android TVs, tablets, and more.',
     icon: Globe2,
@@ -101,7 +101,7 @@ export const products: Product[] = [
   },
   {
     id: 'meet',
-    name: 'Gothwad Meet',
+    name: 'Bansify Meet',
     description:
       'Connect face to face. Peer-to-peer video meetings, powered by WebRTC.',
     icon: Video,
@@ -112,7 +112,7 @@ export const products: Product[] = [
   },
   {
     id: 'launcher',
-    name: 'Gothwad Launcher',
+    name: 'Bansify Launcher',
     description:
       'A native Android TV home screen with remote-first navigation.',
     icon: Monitor,
@@ -123,7 +123,7 @@ export const products: Product[] = [
   },
   {
     id: 'manager',
-    name: 'Gothwad Manager',
+    name: 'Bansify Manager',
     description: 'File management and archive tools for Android devices.',
     icon: FolderOpen,
     color: 'orange',
@@ -133,7 +133,7 @@ export const products: Product[] = [
   },
   {
     id: 'education',
-    name: 'Gothwad Education',
+    name: 'Bansify Education',
     description:
       'School administration and learning for teachers, students, and parents.',
     icon: GraduationCap,
@@ -155,7 +155,7 @@ export const products: Product[] = [
   },
   {
     id: 'ai',
-    name: 'Gothwad AI',
+    name: 'Bansify AI',
     description:
       'Get oriented with the AI Studio application and local development setup.',
     icon: Braces,
@@ -165,14 +165,14 @@ export const products: Product[] = [
     tag: 'AI tools',
   },
   {
-    id: 'gothwadtech',
-    name: 'Gothwad Tech website',
+    id: 'bansify',
+    name: 'Bansify website',
     description:
       'Explore the corporate web platform, components, and developer entry points.',
     icon: Building2,
     color: 'blue',
     category: 'Developer tools',
-    repo: 'gothwadtech',
+    repo: 'bansify',
     tag: 'Web platform',
   },
 ];
@@ -189,7 +189,7 @@ export type Doc = {
 export const docs: Doc[] = [
   {
     slug: 'quickstart',
-    title: 'Start building with Gothwad',
+    title: 'Start building with Bansify',
     description:
       'Choose a product, prepare your environment, and run your first project.',
     section: 'Getting started',
@@ -198,7 +198,7 @@ export const docs: Doc[] = [
   },
   {
     slug: 'architecture',
-    title: 'The Gothwad ecosystem',
+    title: 'The Bansify ecosystem',
     description:
       'Understand how identity, Workers, web apps, and native products fit together.',
     section: 'Getting started',
@@ -217,7 +217,7 @@ export const docs: Doc[] = [
   })),
   {
     slug: 'accounts-setup',
-    title: 'Set up Gothwad Accounts',
+    title: 'Set up Bansify Accounts',
     description:
       'Configure Supabase, deploy the auth Worker, and publish the Accounts frontend.',
     section: 'Guides',
@@ -228,7 +228,7 @@ export const docs: Doc[] = [
   },
   {
     slug: 'oauth',
-    title: 'Integrate Sign in with Gothwad',
+    title: 'Integrate Sign in with Bansify',
     description:
       'Implement the authorization-code flow with PKCE, state validation, and user info.',
     section: 'Guides',
@@ -239,7 +239,7 @@ export const docs: Doc[] = [
   },
   {
     slug: 'mail-setup',
-    title: 'Deploy Gothwad Mail',
+    title: 'Deploy Bansify Mail',
     description:
       'Connect Accounts, configure the Mail database and Worker, and enable email routing.',
     section: 'Guides',
