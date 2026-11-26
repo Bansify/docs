@@ -1,6 +1,6 @@
-# Gothwad Tech · Developer documentation
+# Bansify · Developer documentation
 
-A central, source-based documentation portal for the Gothwad Tech ecosystem. Built with **React 19, Vite, TypeScript, MDX, and CSS**, with a responsive Cloudflare-inspired interface and a distinct Gothwad identity.
+A central, source-based documentation portal for the Bansify ecosystem. Built with **React 19, Vite, TypeScript, MDX, and CSS**, with a responsive Cloudflare-inspired interface and a distinct Bansify identity.
 
 ## Included
 
@@ -44,7 +44,7 @@ The Playwright configuration starts Vite automatically, or reuses the local deve
 ## Deploy to Cloudflare Pages
 
 1. Push the finished code to the branch you intend to deploy. The current development work is on `arena/14d98888-docs`; production can follow your normal reviewed merge process.
-2. In Cloudflare, create a **Pages** project and connect `GothwadTech/docs`.
+2. In Cloudflare, create a **Pages** project and connect `BansifyTech/docs`.
 3. Select the branch that contains this implementation.
 4. Configure:
 
@@ -98,7 +98,7 @@ MDX is compiled at build time and must be reviewed trusted repository content. T
 With your own authenticated GitHub CLI:
 
 ```bash
-gh repo list GothwadTech --limit 100 \
+gh repo list BansifyTech --limit 100 \
   --json name,description,url,isPrivate,isFork > src/repositories.json
 ```
 
@@ -110,4 +110,4 @@ Search runs locally. Theme preference and page-helpfulness selections are stored
 
 ## Source and licensing boundaries
 
-Product documentation is paraphrased from public GothwadTech source files and credits the relevant repositories. Product licenses differ: public source does not imply an open-source license. Browser's source-available restrictions and PlusTube's upstream Flow attribution are explicitly noted. No product secrets or native signing materials are included.
+Product documentation is paraphrased from public BansifyTech source files and credits the relevant repositories. Product licenses differ: public source does not imply an open-source license. Browser's source-available restrictions and PlusTube's upstream Flow attribution are explicitly noted. No product secrets or native signing materials are included.
